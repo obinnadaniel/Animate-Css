@@ -1,0 +1,68 @@
+* {
+    font-family: cursive;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: url('coffee.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    color: #FFF;
+}
+
+h1#brand {
+    padding: 0 1rem;
+}
+
+p#slogan {
+    padding: 0 3rem;
+}
+
+.card {
+    background: #FFF;
+    color: #222222;
+    display: none;
+    padding: 1rem;
+    border-radius:8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+.cardDiv {
+    width: 360px;
+    border-left:4px solid green;
+    padding: 0 0.5rem;
+    display: none;
+}
+
+.card h2 {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 0.5rem;
+}
+
+.footer {
+    position: absolute;
+    bottom:1rem;
+    left:1rem;
+    padding: 0 1rem;
+    background: #FFF;
+    color:#000;
+    border-radius: 8px;
+    display: none;
+}

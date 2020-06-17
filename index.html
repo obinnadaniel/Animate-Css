@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animate CSS</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animate.min.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="overlay">
+            <h1 id="brand" class="animated bounceInLeft">Mocha Cafe</h1>
+            <p id="slogan" class="animated zoomIn">Feel the freshly ground coffee in every sip of mocha.</p>
+
+            <div class="card" id="menu">
+                <h2>Our Menu:</h2>
+                <div class="cardDiv" id="menu1">
+                    <h3>Cafe Mocha</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa mollitia voluptate dignissimos quis odit obcaecati iure neque alias. Facere?</p>
+                </div>
+                <div class="cardDiv" id="menu2">
+                    <h3>Caramel Mocha</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa mollitia voluptate dignissimos quis odit obcaecati iure neque alias. Facere?</p>
+                </div>
+                <div class="cardDiv" id="menu3">
+                    <h3>Mint Mocha</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa mollitia voluptate dignissimos quis odit obcaecati iure neque alias. Facere?</p>
+                </div>
+            </div>
+            <div class="footer" id="footer">
+                <h3> Lokanthali - 11, Bhaktapur</h3>
+            </div>
+        </div>
+    </div>
+    <script>
+        setTimeout(function(){
+            let element = document.getElementById("menu");
+            element.style.display="inline-block";
+
+            element.classList.add("animated");
+            element.classList.add("bounceInLeft");
+        }, 2000);
+        setTimeout(function(){
+            let element = document.getElementById("menu1");
+            element.style.display="block";
+            element.classList.add("animated");
+            element.classList.add("bounceInRight");
+        }, 2500);
+        setTimeout(function(){
+            let element = document.getElementById("menu2");
+            element.style.display="block";
+            element.classList.add("animated");
+            element.classList.add("fadeIn");
+        }, 2750);
+        setTimeout(function(){
+            let element = document.getElementById("menu3");
+            element.style.display="block";
+            element.classList.add("animated");
+            element.classList.add("bounceInRight");
+        }, 3000);
+        setTimeout(function(){
+            let element = document.getElementById("footer");
+            element.style.display="block";
+            element.classList.add("animated");
+            element.classList.add("tada");
+        }, 3250);
+    </script>
+</body>
+</html>
